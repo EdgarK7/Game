@@ -13,6 +13,8 @@ public:
 	void Draw();
 	void Move(int rows, int cols);
 	vector<Position> GetCellPositions();
+	void Rotate();
+	void UndoRotation();
 	int id;
 	map<int, vector<Position>> cells;
 private:
