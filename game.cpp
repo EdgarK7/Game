@@ -33,7 +33,8 @@ vector<Block> Game::GetAllBlocks()
 void Game::Draw()
 {
 	grid.Draw();
-	currentBlock.Draw();
+	currentBlock.Draw(11,11);
+	nextBlock.Draw(270, 270);
 }
 
 void Game::HandleInput()

@@ -10,7 +10,7 @@ class Block
 {
 public:
 	Block();
-	void Draw();
+	void Draw(int offsetx, int offsety);
 	void Move(int rows, int cols);
 	vector<Position> GetCellPositions();
 	void Rotate();
