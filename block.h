@@ -11,10 +11,14 @@ class Block
 public:
 	Block();
 	void Draw();
+	void Move(int rows, int cols);
+	vector<Position> GetCellPositions();
 	int id;
 	map<int, vector<Position>> cells;
 private:
 	int cellSize;
 	int rotationState;
 	vector<Color> colors;
+	int rowOffset;
+	int colOffset;
 };
